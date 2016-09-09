@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ecolage web</title>
+  <title>Ecolage - scoala de bune maniere pentru copii - Excelenta, educatie si stil</title>
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -28,20 +28,35 @@
   <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div id="background-menu" onclick="sayHello()">
+
+  </div>
   <div class="container" id="menu-container">
     <ul class="nav nav-pills" id="menu">
-      <li class="active"><a href="#home">Écolage</a></li>
-      <li><a href="#social-skills">The art of social skills </a></li>
+      <li class="active"><a href="#header">Écolage</a></li>
+      <li><a href="#social">The art of social skills </a></li>
       <li><a href="#classes">Classes</a></li>
-      <li><a href="#team">Meet the team</a></li>
-      <li><a href="#contact">Contact us</a></li>
+      <li><a href="#team-members">Meet the team</a></li>
+      <li><a href="#contact-us">Contact us</a></li>
+    </ul>
+  </div>
+  <div id="mobile-menu">
+    <button class="hamburger">&#9776;</button>
+  </div>
+  <div id="mobile-menu-expanded">
+    <ul>
+      <li class="active"><a onClick="sayHello()" href="#header">Écolage</a></li>
+      <li><a onClick="sayHello()" href="#social-skills">The art of social skills </a></li>
+      <li><a onClick="sayHello()" href="#classes">Classes</a></li>
+      <li><a onClick="sayHello()" href="#team">Meet the team</a></li>
+      <li><a onClick="sayHello()" href="#contact">Contact us</a></li>
     </ul>
   </div>
   <section id="header" class="header">
     <div class="boy-1"></div>
     <div class="boy-2"></div>
   </section>
-  <div id="decorator"></div>
+  <div id="social"></div>
   <div id="social-skills-bg"></div>
   <div id="girl-1"></div>
   <section id="social-skills">
@@ -96,30 +111,29 @@
       <p>
         Cursurile școlii de bune maniere Écolage sunt compuse din 12 module, a câte 2 ore fiecare, desfășurate pe o perioadă de 3 luni.
       </p>
-      <div class="decorator-infinite"></div>
+      <div class="decorator-infinite" id="team-members"></div>
     </div>
   </section>
   <section id="team">
     <div class="container">
       <h1>MEET THE TEAM</h1>
+      <div id="back-arrow"></div>
+      <div id="front-arrow"></div>
       <ul>
-        <li>
-          <img src="images/team-2.png" />
+        <li id="left-member">
+          <img src="images/monica.png" id="left-member-image" />
         </li>
-        <li>
-          <img src="images/team-1.png" />
+        <li id="center-member">
+          <img src="images/laura.png" id="center-member-image"/>
         </li>
-        <li>
-          <img src="images/team-2.png" />
+        <li id="right-member">
+          <img src="images/raluca.png" id="right-member-image" />
         </li>
       </ul>
       <div id="team-member-description">
-        <h2 id="team-member-name">Sonia Nechefor</h2>
+        <h2 id="team-member-name">Nume</h2>
         <p id="team-member-text">
-          Sonia Nechifor este Managing Partner al Agenţiei de Comunicare şi PR, Communication ON, cu sedii în Bucureşti şi în Cluj. A pus bazele companiei în anul 2011, în Cluj Napoca, când a ales să urmeze calea antreprenoriatului după o experienţă de peste 6
-          ani în domeniu, în calitate de Director de Comunicare al unei importante universităţi clujene. Activitatea de comunicator o îmbină cu cea de Director Editorial al Revistei Bulevard, revistă lansată în 2011. Dorinţa ei de a găsi idei simple care
-          să transforme gânduri obișnuite în fapte extraordinare, a înconjurat-o de proiecte frumoase şi oameni valoroşi, adevărate personalităţi a căror poveste o conturează zi de zi din ”Laboratorul” de Branding pe care îl conduce. “Cultiv în comunicare
-          elemente provocatoare, inedite și imprevizibile. In timp, mi-am dezvoltat o preferință pentru tot ce iese din comun, pentru radicalii liberi și rebeli și pentru mediile inca neexploatate.”
+          Descriere
         </p>
       </div>
     </div>
@@ -128,9 +142,12 @@
   <section id="contact">
     <div class="container">
       <div class="col-md-6">
-        <h2>
+        <h2 id="contact-us">
           Contact us
         </h2>
+        <h1 id="contact-title">
+          Contact us
+        </h1>
         <button id="send-button">Send</button>
         <form id="contact-form">
           <input type="text" placeholder="email" />
